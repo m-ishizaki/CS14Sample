@@ -1,6 +1,6 @@
 ﻿
 // これは以前からできた
-Func0 func0 = (s) => s + s;                                                 // ref や in、out がつかない場合は、型を省略できる
+Func0 func0 = (s) => s + s;                                                 // ref や in、out などがつかない場合は、型を省略できる
 Func1 func2 = (ref string s1, in string s2, out string s3) => s3 = s1 + s2; // 型を省略できない
 
 // これができるようになった

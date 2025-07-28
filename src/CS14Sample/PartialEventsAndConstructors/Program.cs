@@ -1,2 +1,33 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// partial で宣言のみを行う
+partial class C
+{
+    // イベントの宣言のみ
+    partial event EventHandler Ev1;
+
+    // コンストラクターの宣言のみ
+    partial C(int i);
+
+    // これは書けない
+    // partial C(int i1,int i2) : this();
+    // エラー
+    // 'C.C(int, int)': only the implementing declaration of a partial constructor can have an initializer
+
+    // Preview バージョンを指定していない場合のエラー
+    // C# 13.0 では、修飾子 'partial' はこの項目に対して有効ではありません。'preview' 以上の言語バージョンをご使用ください。
+
+}
+
+// partial で実装を行う
+partial class C
+{
+    // イベントの実装
+    EventHandler? eh;
+    partial event EventHandler Ev1 { add => eh += value; remove => eh -= value; }
+
+    // コンストラクタの実装。実装では this() や base() が書ける
+    partial C(int i) : this() { }
+    partial C(int i1,int i2) : base() { }
+
+    // this() 用のコンストラクタ
+    C() { }
+}
