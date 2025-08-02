@@ -49,5 +49,10 @@ class C
     public void operator |=(C c) { Value |= c?.Value; }
     public void operator ^=(C c) { Value ^= c?.Value; }
     public void operator <<=(int shift) { Value <<= shift; }
-    public void operator >>=(int shift) { Value >>= shift; }
+    public void operator >>=(int shift) { Value >>= shift;
+}
+
+    // Preview バージョンを指定していない場合のエラー
+    // 機能 'user-defined compound assignment operators' は現在、プレビュー段階であり、*サポートされていません*。プレビュー機能を使用するには、'preview' 言語バージョンを使用してください。
+
 }
