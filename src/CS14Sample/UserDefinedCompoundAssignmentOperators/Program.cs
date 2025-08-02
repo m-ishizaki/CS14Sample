@@ -30,8 +30,8 @@ class C
     public static C operator ^(C c1, C c2) => new C() { Value = c1?.Value ^ c2?.Value };
     public static C operator <<(C c, int shift) => new C() { Value = c?.Value << shift };
     public static C operator >>(C c, int shift) => new C() { Value = c?.Value >> shift };
-    public static C operator ++(C c) => new C() { Value = c?.Value + 1 };
-    public static C operator --(C c) => new C() { Value = c?.Value - 1 };
+    public static C operator ++(C c) => new C() { Value = c?.Value + 100 }; // 下の ++() があるとこちらは使われない
+    public static C operator --(C c) => new C() { Value = c?.Value - 100 }; // 下の --() があるとこちらは使われない
 
     ///
     // これらが書けるようになった
