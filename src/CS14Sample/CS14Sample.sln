@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36109.1
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11205.157 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS14Sample", "CS14Sample\CS14Sample.csproj", "{8CBBDE64-BB23-485A-88A4-608FBCA4CBAA}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullConditionalAssignment", "NullConditionalAssignment\NullConditionalAssignment.csproj", "{C4A5C816-115D-4CE2-B4A0-721C59B33E03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedCompoundAssignmentOperators", "UserDefinedCompoundAssignmentOperators\UserDefinedCompoundAssignmentOperators.csproj", "{A948DCF0-686C-4AC9-8929-BD54C062B96E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMembers_vAvailable", "ExtensionMembers_vAvailable\ExtensionMembers_vAvailable.csproj", "{EF3265A2-ADF6-9DED-87FC-C9954A1F9119}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{A948DCF0-686C-4AC9-8929-BD54C062B96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A948DCF0-686C-4AC9-8929-BD54C062B96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A948DCF0-686C-4AC9-8929-BD54C062B96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3265A2-ADF6-9DED-87FC-C9954A1F9119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3265A2-ADF6-9DED-87FC-C9954A1F9119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3265A2-ADF6-9DED-87FC-C9954A1F9119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3265A2-ADF6-9DED-87FC-C9954A1F9119}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
