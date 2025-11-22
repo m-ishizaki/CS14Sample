@@ -5,6 +5,9 @@ Console.WriteLine("Hello, World!".ToArray().IsEmpty);
 Console.WriteLine("".ToArray().IsEmpty);
 Console.WriteLine(IEnumerable<int>.Combine(new int[] { }, new int[] { }));
 
+Console.WriteLine(SampleOldExtension.IsEmpty(0));
+Console.WriteLine(SampleOldExtension.IsEmpty(1));
+
 // 参考
 // 昔ながらの拡張メソッド
 public static class SampleOldExtension
